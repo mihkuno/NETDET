@@ -1,0 +1,30 @@
+(venv) ➜  netdet git:(master) ✗ python inference.py --model_path output/nsl_model.pth --test_file dataset/kddtest.csv --batch_size=64
+[WARN] Skipping 17 unknown labels in test set: {'saint', 'sqlattack', 'xterm', 'xsnoop', 'apache2', 'mscan', 'httptunnel', 'udpstorm', 'processtable', 'xlock', 'snmpguess', 'snmpgetattack', 'sendmail', 'worm', 'mailbomb', 'ps', 'named'}
+Evaluation Results:
+Accuracy:  0.8536
+Precision: 0.8205
+Recall:    0.8536
+F1 Score:  0.8045
+
+Sample Normal vs Attack Probabilities (first 10 samples):
+Sample 1: Normal: 0.00% | Attack: 100.00% | Predicted Label: neptune (100.00%)
+Sample 2: Normal: 0.00% | Attack: 100.00% | Predicted Label: neptune (100.00%)
+Sample 3: Normal: 98.91% | Attack: 1.09% | Predicted Label: normal (98.91%)
+Sample 4: Normal: 100.00% | Attack: 0.00% | Predicted Label: normal (100.00%)
+Sample 5: Normal: 93.35% | Attack: 6.65% | Predicted Label: normal (93.35%)
+Sample 6: Normal: 71.38% | Attack: 28.62% | Predicted Label: normal (71.38%)
+Sample 7: Normal: 100.00% | Attack: 0.00% | Predicted Label: normal (100.00%)
+Sample 8: Normal: 92.34% | Attack: 7.66% | Predicted Label: normal (92.34%)
+Sample 9: Normal: 100.00% | Attack: 0.00% | Predicted Label: normal (100.00%)
+Sample 10: Normal: 0.00% | Attack: 100.00% | Predicted Label: neptune (100.00%)
+
+Accuracy in classifying as Normal vs Attack: 0.8564
+(venv) ➜  netdet git:(master) ✗ python main.py
+
+Single sample prediction:
+Label: nmap | Confidence: 99.72%
+(venv) ➜  netdet git:(master) ✗ python main.py                                                                                       
+
+Single sample prediction:
+Label: neptune | Confidence: 100.00%
+(venv) ➜  netdet git:(master) ✗ 
