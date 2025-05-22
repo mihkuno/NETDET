@@ -99,7 +99,7 @@ The model is trained to detect network intrusions with high accuracy while minim
 
 ## 🛠️ Requirements
 
-- Python 3.7+
+- Python 3.12
 - PyTorch
 - NumPy
 - Pandas
